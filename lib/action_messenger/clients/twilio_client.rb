@@ -18,10 +18,8 @@ module ActionMessenger
         @phone_number = opts.fetch(:phone_number, default_phone_number)
       end
 
-      def send_message(to:, body:, **opts)
-        account.messages.create(from: opts.fetch(:from, default_phone_number),
-                                body: body,
-                                to: to)
+      def send_message(to:, body:, from:)
+        account.messages.create(to: to, body: body, from: from)
       end
 
       def account

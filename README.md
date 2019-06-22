@@ -42,7 +42,48 @@ And then run `bundle install` in your project's root directory directory.
 
 ## Usage
 
-_TODO: Write usage instructions here_
+### Sending Text Messages
+
+```ruby
+require 'action_messenger'
+
+class TestMessenger < ActionMessenger::Base
+  default from: ENV['TWILIO_PHONE_NUMBER']
+
+  def self.send_test(to:)
+    message(to: to, body: 'TEST')
+  end
+end
+```
+
+TODO: Update this second once we are pulling in the text from `app/views`. - TW
+
+
+### Generating new Messengers
+
+
+> TODO: Fill out this section once we have basic generators.
+
+
+### Setting Defaults
+
+Similar to ActionMailer, the _Base_ class maintains a class-level attribute
+which stores default values used in the message delivery configuration.
+
+For a new _Messenger_ instance, a default value could be provided using the following syntax:
+
+```ruby
+class TommyTutoneMessenger < ActionMessenger::Base
+  default from: '+15558675309'
+  .....
+end
+```
+
+### Application Configuration
+
+
+> TODO: Look to review how defaults would be set in a new Rails app. - TW
+
 
 ## Development
 
