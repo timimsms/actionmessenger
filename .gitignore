@@ -12,3 +12,6 @@
 
 # byebug history log
 .byebug_history
+
+# ENV variables
+.env
