@@ -2,6 +2,19 @@
 
 ActionMessenger provides a lightweight comparative solution for texting as [ActionMailer](https://github.com/rails/rails/tree/master/actionmailer) provides for email composition and delivery in the core Rails API.
 
+**⚠️ Gem is currently pre-release! ⚠️**
+
+The following tasks are mapped to the initial release:
+
+- [x] Ability to manage ENV variable for an application using this Gem.
+- [x] Ability to process and sent text messages via Twilio.
+- [x] Ability to set per-Messenger-instance defaults.
+- [ ] Create generators for the installation of this Gem as well as the generation of each new Messenger instance.
+- [ ] Ensure that the `message(...)` call is returning an object which can then receive specific delivery method to trigger the SMS delivery. This will allow `deliver_now` and `deliver_later` functionality for SMS.
+- [ ] Ability to set application-wide Messenger defaults.
+- [ ] TESTS!!!
+- [ ] Better/updated documentation showcasing all of the initial functionality.
+
 ## Installation
 
 ### Ruby
@@ -54,6 +67,11 @@ class TestMessenger < ActionMessenger::Base
     message(to: to, body: 'TEST')
   end
 end
+```
+
+Which would allow a very basic email containing the word `"TEST"` when running:
+```
+TestMessenger.send_test(to: '+15551234567')
 ```
 
 TODO: Update this second once we are pulling in the text from `app/views`. - TW
