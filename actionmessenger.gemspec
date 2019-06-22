@@ -1,13 +1,16 @@
 
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'actionmessenger/version'
+
+require 'action_messenger/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'actionmessenger'
-  spec.version       = Actionmessenger::VERSION
+  spec.version       = ActionMessenger::VERSION
   spec.authors       = ['Tim Walsh']
   spec.email         = ['tim@mims.ms']
+
+  spec.license       = 'MIT'
 
   spec.summary       = %q{Provides a lightweight interface for sending SMS.}
   spec.description   = %q{Modeled after ActionMailer, implements a similar

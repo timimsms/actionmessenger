@@ -1,6 +1,6 @@
-# Action Messenger
+# ActionMessenger
 
-_TODO: Add Overview_
+ActionMessenger provides a lightweight comparative solution for texting as [ActionMailer](https://github.com/rails/rails/tree/master/actionmailer) provides for email composition and delivery in the core Rails API.
 
 ## Installation
 
@@ -14,18 +14,22 @@ gem 'actionmessenger'
 
 And then execute:
 
-    $ bundle
+```
+bundle
+```
 
 Or install it yourself as:
 
-    $ gem install actionmessenger
+```
+gem install actionmessenger
+```
 
 ### Rails
 
 
 The latest version of Action Messenger can be installed with RubyGems:
 
-https://rubygems.org/gems/actionmessenger
+> https://rubygems.org/gems/actionmessenger
 
 Simply add the following to your Gemfile:
 
@@ -33,7 +37,7 @@ Simply add the following to your Gemfile:
 gem 'actionmessenger'
 ```
 
-And then run `bundle install` in your project's directory.
+And then run `bundle install` in your project's root directory directory.
 
 
 ## Usage
@@ -42,10 +46,10 @@ _TODO: Write usage instructions here_
 
 ## Development
 
-After checking out the repository:
+After checking out the repository, you may:
 
 - run `bin/setup` to install dependencies,
-- run `rake spec` to run the tests, and
+- run `bundle exec rspec spec` to run the tests, and
 - run `bin/console` for an interactive prompt that will allow you to experiment.
 
 To install this gem onto your local machine, run `bundle exec rake install`.

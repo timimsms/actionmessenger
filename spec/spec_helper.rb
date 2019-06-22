@@ -1,5 +1,6 @@
 require 'bundler/setup'
-require 'actionmessenger'
+
+require 'action_messenger'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
