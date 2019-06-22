@@ -1,0 +1,11 @@
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - './bin/**/*'
+    - 'Rakefile'
+    - 'Gemfile'
+    - 'Gemfile.lock'
+    - 'actionmessenger.gemspec'
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
