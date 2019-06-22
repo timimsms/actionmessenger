@@ -22,7 +22,19 @@ Or install it yourself as:
 
 ### Rails
 
-_TODO: Add Rails instructions regarding install to Gemfile._
+
+The latest version of Action Messenger can be installed with RubyGems:
+
+https://rubygems.org/gems/actionmessenger
+
+Simply add the following to your Gemfile:
+
+```ruby
+gem 'actionmessenger'
+```
+
+And then run `bundle install` in your project's directory.
+
 
 ## Usage
 
