@@ -1,6 +1,6 @@
 # ActionMessenger
 
-ActionMessenger provides a lightweight comparative solution for texting as [ActionMailer](https://github.com/rails/rails/tree/master/actionmailer) provides for email composition and delivery in the core Rails API.
+ActionMessenger provides a lightweight comparative solution for text messages (SMS) creation and delivery as [ActionMailer](https://github.com/rails/rails/tree/master/actionmailer) provides for email composition and delivery in the core Rails API.
 
 **⚠️ Gem is currently pre-release! ⚠️**
 
@@ -69,12 +69,12 @@ class TestMessenger < ActionMessenger::Base
 end
 ```
 
-Which would allow a very basic email containing the word `"TEST"` when running:
+Which would allow a very basic text message containing the word `"TEST"` when running:
 ```
 TestMessenger.send_test(to: '+15551234567')
 ```
 
-TODO: Update this second once we are pulling in the text from `app/views`. - TW
+TODO: Update this once we are pulling in the text from `app/views`. - TW
 
 
 ### Generating new Messengers
