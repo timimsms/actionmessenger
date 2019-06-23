@@ -38,8 +38,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'actionpack', '~> 5.0.0.1'
-  spec.add_dependency 'activesupport', '~> 5.0.0.1'
+  spec.add_dependency 'actionpack', '>= 5.0.7.2'
+  spec.add_dependency 'activesupport', '>= 5.0.7.2'
   spec.add_dependency 'dotenv-rails', '~> 2.7.2'
   spec.add_dependency 'twilio-ruby', '~> 5.22.0'
 
@@ -47,5 +47,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop', '~> 0.71.0'
-  spec.add_development_dependency 'byebug'
+  spec.add_development_dependency 'rubocop-rails', '~> 2.0.1'
+  spec.add_development_dependency 'byebug', '~> 11.0.1'
 end
