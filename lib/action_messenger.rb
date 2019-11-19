@@ -6,4 +6,5 @@ require 'action_messenger/clients/twilio_client'
 
 # Manage load order, dependencies, and on_load/after_load callbacks.
 module ActionMessenger
+  require 'action_messenger/engine' if defined?(Rails)
 end

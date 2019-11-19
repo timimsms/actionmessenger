@@ -6,6 +6,7 @@ AllCops:
     - 'Gemfile'
     - 'Gemfile.lock'
     - 'actionmessenger.gemspec'
+    - './lib/action_messenger/templates/**/*'
 
 Style/FrozenStringLiteralComment:
   Enabled: false
