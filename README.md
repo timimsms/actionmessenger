@@ -1,5 +1,18 @@
 # ActionMessenger
 
+> **⚠️ This project is superseded and archived.**
+>
+> The idea behind ActionMessenger has moved to **[Smswire](https://github.com/timimsms/smswire)**
+> (https://smswire.dev): the production SMS layer for Rails that Noticed and twilio-ruby
+> both leave to you. Smswire covers messenger classes and templates, provider adapters,
+> persisted deliveries with status callbacks, consent and STOP/HELP/START handling,
+> retries, development sandboxing, previews, and test helpers, plus a Noticed delivery
+> adapter.
+>
+> This repository is kept for history only. It was never published to rubygems.org,
+> its dependencies are years end-of-life, and it does not install on current Ruby.
+> No further changes will be made here.
+
 ActionMessenger provides a lightweight comparative solution for text messages (SMS) creation and delivery as [ActionMailer](https://github.com/rails/rails/tree/master/actionmailer) provides for email composition and delivery in the core Rails API.
 
 **⚠️ Gem is currently pre-release! ⚠️**
